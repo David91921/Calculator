@@ -1,7 +1,9 @@
 import React from "react";
 
-const Display = () => (
-    <div className="input">
-
-    </div>
+const Display = ({ input }) => (
+  <div className="input">
+    {input}
+  </div>
 );
+
+export default Display;
