@@ -1,4 +1,5 @@
 import React from "react";
+import '../style-sheet/Display.css'
 
 const Display = ({ input }) => (
   <div className="input">

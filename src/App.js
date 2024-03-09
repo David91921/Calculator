@@ -1,5 +1,7 @@
 import './App.css';
 import Boton from './components/Boton';
+import Display from './components/Display';
+import BotonClear from './components/BotonClear';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
           alt='Logo Free Code Camp' />
       </div>
       <div className='contenedor-calculadora '>
+        <Display />
         <div className='fila'>
           <Boton>1</Boton>
           <Boton>2</Boton>
@@ -36,7 +39,7 @@ function App() {
           <Boton>/</Boton>
         </div>
         <div className='fila'>
-          
+          <BotonClear>Clear</BotonClear>
         </div>
       </div>
     </div>
