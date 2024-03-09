@@ -10,11 +10,15 @@ function App() {
   const [input, setInput] = useState('');
 
   const agregarInput = (valor) => {
-    setInput(input.concat(valor))
+    setInput(input + valor)
   };
 
   const calcularResultado = () => {
-    setInput(evaluate(input))
+    if (input){
+      setInput(evaluate(input))
+    }else{
+      alert("Ingrese valores validos para realizar calculos")
+    }
   };
 
 
